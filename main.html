@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COLOR FLIPPER</title>
+    
     <style>
+        body {
+            font-family: monospace;
+            text-align: center;
+            margin: 10%;
+        }
+
         #green {
             background-color: green;
         }
@@ -16,14 +23,38 @@
         #blue {
             background-color: blue;
         }
+
+        button {
+            /*style the buttons*/
+            margin: 5px;
+            width: 10em;
+            height: 40px;
+            margin: 10px;
+            border-radius: 10px;
+            border-style: solid;
+            
+        }
+
+        button:hover {
+            border-style: dashed;
+            width: 10.1em;
+            height: 41px;
+        }
         
+
     </style>
 </head>
 <body>
     <h2>COLOR FLIPPER</h2> 
-    <button id="green">Green</button>
-    <button id="red">Red</button>
-    <button id="blue">Blue</button>
-    <button id="random">Random</button>
+    <button id="green" onclick="changeColor('green')">Green</button>
+    <br>
+    <button id="red" onclick="changeColor('red')">Red</button>
+    <br>
+    <button id="blue" onclick="changeColor('blue')">Blue</button>
+    <br>
+    <button id="random" onclick="randomColor()">Random</button>
+    <br>
+
+    <script src="index.js"></script>
 </body>
 </html>
